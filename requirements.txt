@@ -11,6 +11,6 @@ jupyterlab        # better jupyter notebooks
 wheel             # Eases installation of some deps
 einops~=0.3.0     # Eases operations on tensors
 matplotlib        # plotting
-h5py~=3.1.0       # Saving and loading of hdf5 files (no longer needed?)
+h5py~=3.1.0       # Saving and loading of hdf5 files
 graphviz~=0.18.2  # Plotting graphical models
 lxml

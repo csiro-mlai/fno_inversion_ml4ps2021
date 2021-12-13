@@ -17,10 +17,22 @@ Local desktop, bash shell:
 python3 -m venv --prompt fno_inversion_ml4ps2021 ./venv
 source ./venv/bin/activate
 pip install -r requirements.txt
+jupyter lab operator_inversion.ipynb
 ```
 
 This should work for Linux, macos, or Windows Susbystem for Linux. 
 For windows native, you are on your own, good luck.
+
+### Choosing regularisation
+
+To experiment with selecting the regularisation parameter you will need a large validation data set.
+Here is one.
+
+```bash
+wget https://cloudstor.aarnet.edu.au/plus/s/FblQ6LxQtCosPkq/download -O ./data/grf_forcing_mini_1.h5
+```
+
+### Graphical models
 
 If you wish to additionally visualize graphical models, you need graphviz.
 Depending on your platform this will be something like
@@ -33,12 +45,6 @@ sudo apt install graphviz   # Debian/ubuntu/WSL default
 ```
 
 [Graphviz on Windows is complicated](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224) so once again, use WSL.
-
-Download data:
-
-```bash
-wget https://cloudstor.aarnet.edu.au/plus/s/FblQ6LxQtCosPkq/download -O grf_forcing_mini_1.h5
-```
 
 ### Developer setup
 
